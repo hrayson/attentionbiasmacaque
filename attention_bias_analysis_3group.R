@@ -46,7 +46,7 @@ rank_file<-'./data/rank.csv'
 ranks<-read.csv(file=rank_file,header=TRUE,sep=',')
 ranks$Cscore_m<-scale(ranks$score_m)
 
-groups<-read.csv(file='./data/groups.csv',header=TRUE,sep=',')
+groups<-read.csv(file='./data/groups_3.csv',header=TRUE,sep=',')
 data_filt$Group <- groups$group[match(data_filt$Subject, groups$subject)]
 
 # Merge behavior and gaze data
