@@ -96,7 +96,7 @@ all_data_filt<-merge(all_data_filt,ranks,by=c('Subject'),all.x = TRUE, all.y = T
 all_data_filt$Subject<-as.factor(all_data_filt$Subject)
 all_data_filt<-merge(all_data_filt,sex_data,by=c('Subject'))
 
-groups<-read.csv(file='./data/groups.csv',header=TRUE,sep=',')
+groups<-read.csv(file='./data/groups_3.csv',header=TRUE,sep=',')
 all_data_filt$Group <- groups$group[match(all_data_filt$Subject, groups$subject)]
 
 
