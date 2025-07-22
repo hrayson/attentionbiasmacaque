@@ -20,7 +20,7 @@ add_extra_codes = function(subj_df) {
   other_motor_state<-subj_df$Other.motor>=1
   locomotion_state<-subj_df$Locomotion>=1
   
-  thresh<-5
+  thresh<-10
   
   # Mutually exclusive contact - not when giving groom or huddle
   subj_df<-add_column(subj_df, ContactMutExcl=subj_df$Contact, .after='STATES')
