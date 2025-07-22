@@ -8,7 +8,7 @@ load_data=function(data_dir, groups, obj_states, obj_events) {
   unique_subjects<-unique(groups$subject)
   
   all_subj_df<-data.frame()
-  duration<-600
+  duration<-300
   
   filepaths <- Sys.glob(paste0(data_dir,"/*.xlsm"))
   for(filepath in filepaths) {
