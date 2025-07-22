@@ -25,7 +25,7 @@ for(year in c(1)) {
                             'Self.groom', 'Self.mouth', 'Pace', 'Somersault', 'Bounce', 'Rocking', 'Spin', 'Swinging', 'Head.twist', 
                             'Floating.limb', 'Other.motor')
   
-  duration<-600
+  duration<-300
   
   all_data<-load_data(paste0(data_dir,'/group_obs/'),groups,obj_states, obj_events)
   ss_all_data<-subset(all_data, select=-c(Subject,Group,Date,Time))
